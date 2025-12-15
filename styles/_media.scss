@@ -13,6 +13,12 @@ $mobile: 767px;
   }
 }
 
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
 .element {
   padding-block: 100px;
   font-size: 30px;
@@ -68,4 +74,5 @@ button {
     background-color: lightcoral;
   }
 }
+
 
