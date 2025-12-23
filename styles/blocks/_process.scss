@@ -25,6 +25,10 @@
 
     &[open] {
       background-color: var(--color-accent);
+
+      .process__accordion-indicator::after {
+        rotate: 0deg;
+      }
     }
 
     &-header {

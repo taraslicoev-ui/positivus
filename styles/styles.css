@@ -442,7 +442,7 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  translate: -50% -50%;
   content: "";
   width: 50%;
   height: 2px;
@@ -1013,6 +1013,9 @@ h4 {
 .process__accordion[open] {
   background-color: var(--color-accent);
 }
+.process__accordion[open] .process__accordion-indicator::after {
+  rotate: 0deg;
+}
 .process__accordion-header {
   display: flex;
   justify-content: space-between;
@@ -1045,7 +1048,7 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  translate: -50% -50%;
   content: "";
   width: 45%;
   height: 10%;
