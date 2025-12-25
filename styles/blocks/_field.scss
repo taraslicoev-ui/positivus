@@ -4,6 +4,10 @@
   align-items: start;
   row-gap: 5px;
 
+  @include mobile {
+    row-gap: 10px;
+  }
+
   &__label {
     @include fluid-text(16, 14);
   }
@@ -19,6 +23,10 @@
       background-color: var(--color-accent);
     }
 
+    @include mobile {
+      padding-inline: 20px;
+    }
+
     &:focus {
       border-color: var(--color-accent);
       outline: none;
@@ -32,6 +40,10 @@
       height: 190px;
       padding-block: 18px;
       resize: none;
+
+      @include mobile {
+        height: 132px;
+      }
     }
   }
 }
